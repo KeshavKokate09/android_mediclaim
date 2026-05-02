@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors (Dark Theme) - Refined Professional Palette -->
+    <color name="primary">#A9C7FF</color> <!-- Lighter blue for dark surfaces -->
+    <color name="primary_variant">#004786</color>
+    <color name="primary_dark">#D6E3FF</color>
+    <color name="on_primary">#003062</color>
+    
+    <color name="secondary">#80D5C7</color> <!-- Soft Medical Teal -->
+    <color name="on_secondary">#003730</color>
+    
+    <!-- Dark Theme Surface & Background -->
+    <color name="background">#111318</color> <!-- Deep neutral -->
+    <color name="background_alt">#1A1C22</color>
+    <color name="background_wellness">#141B1B</color>
+    <color name="on_background">#E2E2E6</color>
+    
+    <color name="surface">#1A1C22</color>
+    <color name="on_surface">#E2E2E6</color>
+    
+    <color name="error">#FFB4AB</color>
+    <color name="on_error">#690005</color>
+    
+    <!-- Semantic Status Colors (Dark) - Better transparency/glow effect -->
+    <color name="status_active">#0E2012</color>
+    <color name="status_active_border">#2C5335</color>
+    <color name="on_status_active">#BFF0C5</color>
+
+    <color name="status_pending">#2D1D00</color>
+    <color name="status_pending_border">#664600</color>
+    <color name="on_status_pending">#FFDEA7</color>
+
+    <color name="status_utilized">#370B0E</color>
+    <color name="status_utilized_border">#8C1D18</color>
+    <color name="on_status_utilized">#FFDAD6</color>
+
+    <color name="status_available">#001D36</color>
+    <color name="status_available_border">#004A77</color>
+    <color name="on_status_available">#D1E4FF</color>
+    
+    <color name="divider">#43474E</color>
+    <color name="nav_item_unselected">#C2C7CF</color>
+</resources>

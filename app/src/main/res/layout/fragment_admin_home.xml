@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_admin_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Admin"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard Overview"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:alpha="0.7"
+            android:layout_marginBottom="24dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            app:rowCount="3"
+            android:layout_marginHorizontal="-8dp">
+
+            <!-- Total Users Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_columnWeight="1"
+                app:cardElevation="0dp"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:cardCornerRadius="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_admin_users"
+                        app:tint="?attr/colorPrimary"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_total_users"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Users"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Total Policies Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_columnWeight="1"
+                app:cardElevation="0dp"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:cardCornerRadius="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_policy"
+                        app:tint="?attr/colorPrimary"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_total_policies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Policies"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Total Claims Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_columnWeight="1"
+                app:cardElevation="0dp"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:cardCornerRadius="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_history"
+                        app:tint="?attr/colorPrimary"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_total_claims"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Claims"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Total Hospitals Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_columnWeight="1"
+                app:cardElevation="0dp"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:cardCornerRadius="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_hospital"
+                        app:tint="?attr/colorPrimary"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_total_hospitals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hospitals"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Pending Approvals Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_pending_approvals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_columnWeight="1"
+                app:cardElevation="0dp"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:cardCornerRadius="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_track_claims"
+                        app:tint="?attr/colorPrimary"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_pending_approvals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending Approvals"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelSmall" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            
+        </androidx.gridlayout.widget.GridLayout>
+
+        <!-- Charts Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Claim Analytics"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            style="@style/Widget.Material3.CardView.Elevated"
+            app:cardCornerRadius="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/claims_bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+                    
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="0dp"
+            style="@style/Widget.Material3.CardView.Elevated"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Claim Status Distribution"
+                    android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                    android:layout_marginBottom="8dp"/>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/claims_pie_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+                    
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

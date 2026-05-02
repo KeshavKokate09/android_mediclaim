@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Mediclaim" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Main Color Palette -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_variant</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorSecondaryContainer">@color/status_available</item>
+        <item name="colorOnSecondaryContainer">@color/on_status_available</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+
+        <!-- Surface and Background -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/divider</item>
+        <item name="colorOnSurfaceVariant">@color/on_background</item>
+        
+        <!-- Edge-to-Edge and System Bars -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o">true</item>
+        
+        <!-- Component Styles -->
+        <item name="toolbarStyle">@style/Widget.Mediclaim.Toolbar</item>
+        <item name="bottomNavigationStyle">@style/Widget.Mediclaim.BottomNavigationView</item>
+    </style>
+
+    <!-- Custom Toolbar Style -->
+    <style name="Widget.Mediclaim.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="background">@color/primary</item>
+        <!-- titleTextColor must be prefixed with app: in XML but android: in Styles -->
+        <item name="titleTextColor">@color/primary</item>
+        <item name="android:textColorPrimary">@color/on_primary</item>
+        <item name="navigationIconTint">@color/on_primary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Mediclaim.TitleMedium</item>
+    </style>
+
+    <!-- Custom Bottom Navigation Style -->
+    <style name="Widget.Mediclaim.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="itemRippleColor">@color/secondary</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.Mediclaim.BottomNavIndicator</item>
+    </style>
+
+    <style name="Widget.Mediclaim.BottomNavIndicator" parent="">
+        <item name="android:color">@color/status_available</item>
+    </style>
+
+    <!-- Standardized Typography -->
+    <style name="TextAppearance.Mediclaim.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_primary</item>
+    </style>
+
+    <style name="TextAppearance.Mediclaim.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="CircleImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

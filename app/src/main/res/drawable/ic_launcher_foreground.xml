@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="10"
+        android:translateY="10">
+        <!-- Outer Circle / Shield Hybrid -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M44,4C28,4 16,10 10,16C10,48 24,72 44,84C64,72 78,48 78,16C72,10 60,4 44,4Z" />
+        
+        <!-- Cross Shape - Professional Thin -->
+        <path
+            android:fillColor="#005FB7"
+            android:pathData="M40,24h8v12h12v8h-12v12h-8v-12h-12v-8h12Z" />
+        
+        <!-- Pulse / Heartbeat Line -->
+        <path
+            android:strokeColor="#005FB7"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M24,58 h10 l4,-8 l6,16 l6,-12 l4,4 h10" />
+    </group>
+</vector>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.pc.mediclaim.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/activity_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.pc.mediclaim.fragments.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pc.mediclaim.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_wellnessFragment"
+            app:destination="@id/wellnessFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.pc.mediclaim.fragments.AdminHomeFragment"
+        android:label="Admin Dashboard"
+        tools:layout="@layout/fragment_admin_home" />
+
+    <fragment
+        android:id="@+id/claimsFragment"
+        android:name="com.pc.mediclaim.fragments.ClaimsFragment"
+        android:label="Claims"
+        tools:layout="@layout/fragment_claims">
+        <action
+            android:id="@+id/action_claimsFragment_to_newClaimFragment"
+            app:destination="@id/newClaimFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newClaimFragment"
+        android:name="com.pc.mediclaim.fragments.NewClaimFragment"
+        android:label="New Claim"
+        tools:layout="@layout/fragment_new_claim" />
+
+    <fragment
+        android:id="@+id/adminClaimsFragment"
+        android:name="com.pc.mediclaim.fragments.AdminClaimsFragment"
+        android:label="Admin Claims"
+        tools:layout="@layout/fragment_admin_claims" />
+
+    <fragment
+        android:id="@+id/adminUsersFragment"
+        android:name="com.pc.mediclaim.fragments.AdminUsersFragment"
+        android:label="User Approvals"
+        tools:layout="@layout/fragment_admin_users" />
+
+    <fragment
+        android:id="@+id/hospitalFragment"
+        android:name="com.pc.mediclaim.fragments.HospitalFragment"
+        android:label="Hospital"
+        tools:layout="@layout/fragment_hospital" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.pc.mediclaim.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wellnessFragment"
+        android:name="com.pc.mediclaim.fragments.WellnessFragment"
+        android:label="Wellness Calculator"
+        tools:layout="@layout/activity_wellness" />
+
+</navigation>

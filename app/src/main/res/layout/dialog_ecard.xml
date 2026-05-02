@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primary">
+
+        <!-- Card Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvCardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEALTH E-CARD"
+                android:textColor="@color/on_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_launcher_foreground"
+                app:tint="@color/on_primary" />
+        </RelativeLayout>
+
+        <!-- Card Body -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:id="@+id/tvHolderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRATIKSHA CHAUDHARI"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMemberId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member ID: SINH-0012345"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginVertical="20dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="POLICY NO" android:textSize="10sp" android:textColor="?attr/colorOnSurfaceVariant" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvPolicyNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SIC/2024/00876" android:textColor="?attr/colorOnSurface" android:textStyle="bold" android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VALID TILL" android:textSize="10sp" android:textColor="?attr/colorOnSurfaceVariant" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvValidTill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="31 Dec 2024" android:textColor="?attr/colorOnSurface" android:textStyle="bold" android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="POLICY TYPE" android:textSize="10sp" android:textColor="?attr/colorOnSurfaceVariant" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GOLD PLAN" android:textColor="?attr/colorOnSurface" android:textStyle="bold" android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BLOOD GROUP" android:textSize="10sp" android:textColor="?attr/colorOnSurfaceVariant" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B+" android:textColor="?attr/colorOnSurface" android:textStyle="bold" android:textSize="14sp"/>
+                </LinearLayout>
+
+            </GridLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDownload"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="32dp"
+                android:text="Download E-Card"
+                app:icon="@drawable/ic_download"
+                app:iconGravity="textStart"
+                app:cornerRadius="16dp" />
+
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a computer generated e-card."
+            android:textColor="@color/on_primary"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:alpha="0.7"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
